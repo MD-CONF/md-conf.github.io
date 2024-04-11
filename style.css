@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  font-size: 16px;
+}
+
+body {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0
+}
+
+hr {
+  width: 95%;
+  margin: 10px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: linear-gradient(45deg, #8CA5D7, #4D65B3);
+  max-width: 1024px;
+  margin: auto;
+}
+
+.conference-logo {
+  max-width: 250px;
+  max-height: 250px;
+  display: block;
+}
+
+.conference-date {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.link-button {
+  display: block;
+  text-align: center;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 2em;
+  color: #1f6a96;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #0743f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.horizontalList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 720px) {
+  .horizontalList {
+    flex-direction: column;
+  }
+}
+
+.about-conference {
+  padding: 0 20px;
+}
+
+.about-conference p {
+  font-weight: 700;
+  text-align: left;
+  text-indent: 50px;
+}
+
+.partner-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner-item {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.partner-item .type {
+  height: 50px;
+  text-align: center;
+}
+
+.partner-item .logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.partner-item .link {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.partner-item .donation {
+  text-align: center;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-container .copyright {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title {
+  margin: 20px 0 10px 0;
+}
+
+.website-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.website-list .link {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  display: block;
+}
